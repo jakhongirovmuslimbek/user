@@ -5,3 +5,4 @@ router = DefaultRouter()
 
 # for users
 router.register('users', UserViewSet, basename="users")
+
