@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     # global apps
     'rest_framework',
     'drf_yasg',
-    'corsheaders',    
+    'corsheaders',
 
     # local apps
     'users',
@@ -49,7 +49,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'corsheaders.middleware.CorsMiddleware',    
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -121,7 +121,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'static/'
+# STATIC_URL = 'static/'
+
+MEDIA_ROOT = '/home/users/user/media'
+MEDIA_URL = '/media/'
+STATIC_ROOT = '/home/users/user/static'
+STATIC_URL = '/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
